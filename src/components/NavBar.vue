@@ -46,11 +46,11 @@ const items = [
   height: 100%;
   padding-inline: 20px;
   border-radius: 4px;
+  transition: 200ms;
 }
 
 .nav-item a:hover {
   cursor: pointer;
   background-color: var(--primary-background-light);
-  transition: 200ms;
 }
 </style>
