@@ -1,17 +1,42 @@
 <script setup>
-
 import CustomSection from './CustomSection.vue';
+import ListItem from './ListItem.vue';
+
+const educationList = [
+  {
+    anioDesde: '2024',
+    anioHasta: 'Actualidad',
+    titulo: 'Técnico Universitario en Programación',
+    institucion: 'Universidad Tecnológica Nacional'
+  },
+  {
+    anioDesde: '2022',
+    anioHasta: '',
+    titulo: 'Desarrollo Java',
+    institucion: 'Academia Softtek'
+  },
+  {
+    anioDesde: '2021',
+    anioHasta: '2022',
+    titulo: 'Programador Web Full Stack',
+    institucion: 'EGG Education'
+  }
+]
 </script>
 
 <template>
   <CustomSection title="Educación" id="education">
     <div>
-      <!-- TODO: completar -->
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor culpa nostrum praesentium asperiores et unde nulla, esse rerum consequatur non harum architecto! Libero aperiam ducimus aspernatur nobis ipsa eligendi.
-      Aliquid nostrum assumenda eveniet, aspernatur blanditiis sequi suscipit quo soluta odio. Quis repellendus in rerum consequatur, nam tenetur, eaque libero ad voluptatibus adipisci, corrupti quisquam repudiandae dolorum distinctio ullam exercitationem.
-      Enim nulla soluta odio impedit? Reiciendis laudantium consequatur nemo provident corporis atque. Neque sit qui earum fuga quaerat odio. Doloremque ducimus dolorem amet itaque blanditiis aperiam corporis totam possimus dolores?
-      Repudiandae obcaecati, in omnis voluptatum sint repellat possimus at impedit quasi ipsum tempore veritatis cupiditate exercitationem blanditiis odio, assumenda dicta numquam necessitatibus recusandae? Pariatur fugiat provident asperiores magnam, rem quae?
-      Saepe sequi fugit quibusdam placeat iusto, ut libero sint expedita sapiente repellendus in. Unde minima iste odit et modi consectetur facilis, sit facere dicta aut iusto, numquam sint laborum amet?</p>
+      <ul id="education-item-list">
+        <li v-for="item in educationList" :key="item.titulo">
+          <ListItem
+            :anioDesde="item.anioDesde"
+            :anioHasta="item.anioHasta"
+            :titulo="item.titulo"
+            :institucion="item.institucion"
+          />
+        </li>
+      </ul>
     </div>
   </CustomSection>
 </template>
@@ -19,5 +44,11 @@ import CustomSection from './CustomSection.vue';
 <style scoped>
 #profile-photo {
   border-radius: 4px;
+}
+
+#education-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 </style>

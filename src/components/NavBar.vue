@@ -47,6 +47,7 @@ const items = [
   padding-inline: 20px;
   border-radius: 4px;
   transition: 200ms;
+  font-weight: 600;
 }
 
 .nav-item a:hover {

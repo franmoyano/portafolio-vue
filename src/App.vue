@@ -1,5 +1,7 @@
 <script setup>
+import CustomFooter from './components/CustomFooter.vue';
 import Education from './components/Education.vue';
+import Experience from './components/Experience.vue';
 import NavBar from './components/NavBar.vue';
 import Presentation from './components/Presentation.vue';
 </script>
@@ -13,6 +15,8 @@ import Presentation from './components/Presentation.vue';
     <main>
       <Presentation />
       <Education />
+      <Experience />
+      <CustomFooter />
     </main>
   </div>
 </template>

@@ -30,12 +30,18 @@ export default {
 
 .content {
   background-color: var(--color-background-light);
+  padding: 2rem 5rem;
   border-radius: 7px;
-  padding: 1rem 2.5rem;
+  border: 3px solid var(--color-background);
+  transition: 200ms;
+}
+
+.content:hover {
+  border-color: var(--primary-background);
 }
 
 .container {
-  width: 90%;
+  width: 70%;
   margin: 2rem auto;
 }
 </style>

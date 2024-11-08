@@ -2,6 +2,7 @@
   --color-text: #FFF;
   --color-background: #313131;
   --color-background-light: #3b3b3b;
+  --color-background-dark: #292929;
   --primary-background: #2644a4;
   --primary-background-light: #3552b3;
 }
@@ -23,17 +24,7 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+    DM Sans,
     sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;

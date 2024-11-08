@@ -5,14 +5,39 @@ import CustomSection from './CustomSection.vue';
 
 <template>
   <CustomSection id="presentation">
-    <div>
-      <img src="../assets/profile-square.jpg" width="300" id="profile-photo">
+    <div class="presentation">
+      <img src="../assets/profile-square.jpg" width="200" id="profile-photo">
+      <hr />
+      <div id="personal">
+        <h1 id="title">Franco Moyano</h1>
+        <span>Programador y estudiante 😁</span>
+        <span>24 años</span>
+        <span>franco.moyano.sr@gmail.com</span>
+        <span>San Rafael, Mendoza, Argentina</span>
+      </div>
     </div>
   </CustomSection>
 </template>
 
 <style scoped>
+.presentation {
+  display: flex;
+  gap: 3rem;
+
+}
+
+#title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#personal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #profile-photo {
-  border-radius: 4px;
+  border-radius: 50%;
 }
 </style>
