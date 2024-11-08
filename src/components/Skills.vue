@@ -48,4 +48,10 @@ const skills = [
     gap: 70px;
   }
 }
+
+@media (max-width: 600px) {
+  .skill-item {
+    gap: 20px;
+  }
+}
 </style>

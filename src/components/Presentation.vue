@@ -44,7 +44,15 @@ import CustomSection from './CustomSection.vue';
   .presentation {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 1rem;
+  }
+
+  #title {
+    line-height: 1.2;
+  }
+
+  #profile-photo {
+    margin: auto;
   }
 
   hr {

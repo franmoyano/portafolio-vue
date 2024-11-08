@@ -45,9 +45,9 @@ export default {
   margin: 2rem auto;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .container {
-    width: 95%;
+    width: 90%;
   }
 
   .content {

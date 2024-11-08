@@ -3,8 +3,7 @@ const items = [
   { name: "Inicio", link: "#presentation" },
   { name: "Educación", link: "#education" },
   { name: "Experiencia", link: "#experience" },
-  { name: "Habilidades/Tecnologías", link: "#skills" },
-  { name: "Intereses", link: "#intereses" },
+  { name: "Habilidades/Tecnologías", link: "#skills" }
 ]
 </script>
 
@@ -64,6 +63,16 @@ const items = [
   .list {
     flex-direction: column;
     align-items: center;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item a {
+    width: 100%;
+    text-align: center;
   }
 }
 </style>
