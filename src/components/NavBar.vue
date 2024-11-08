@@ -4,6 +4,7 @@ const items = [
   { name: "Educación", link: "#education" },
   { name: "Experiencia", link: "#experience" },
   { name: "Habilidades/Tecnologías", link: "#skills" },
+  { name: "Intereses", link: "#intereses" },
 ]
 </script>
 
@@ -29,8 +30,8 @@ const items = [
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
+  width: 80%;
   padding: 0px;
 }
 
@@ -42,7 +43,7 @@ const items = [
   display: flex;
   align-items: center;
   display: flex;
-  width: 100%!important;
+  width: 100% !important;
   height: 100%;
   padding-inline: 20px;
   border-radius: 4px;
@@ -53,5 +54,16 @@ const items = [
 .nav-item a:hover {
   cursor: pointer;
   background-color: var(--primary-background-light);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    height: auto;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

@@ -23,7 +23,6 @@ import CustomSection from './CustomSection.vue';
 .presentation {
   display: flex;
   gap: 3rem;
-
 }
 
 #title {
@@ -39,5 +38,17 @@ import CustomSection from './CustomSection.vue';
 
 #profile-photo {
   border-radius: 50%;
+}
+
+@media (max-width: 1050px) {
+  .presentation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  hr {
+    display: none;
+  }
 }
 </style>

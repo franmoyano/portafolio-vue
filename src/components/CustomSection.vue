@@ -44,4 +44,14 @@ export default {
   width: 70%;
   margin: 2rem auto;
 }
+
+@media (max-width: 450px) {
+  .container {
+    width: 95%;
+  }
+
+  .content {
+    padding: 1rem 1rem;
+  }
+}
 </style>

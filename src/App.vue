@@ -4,6 +4,7 @@ import Education from './components/Education.vue';
 import Experience from './components/Experience.vue';
 import NavBar from './components/NavBar.vue';
 import Presentation from './components/Presentation.vue';
+import Skills from './components/Skills.vue';
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Presentation from './components/Presentation.vue';
       <Presentation />
       <Education />
       <Experience />
+      <Skills />
       <CustomFooter />
     </main>
   </div>
